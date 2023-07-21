@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Result Management System</h1>
+  
+  <div class="from">
+    <label for="rollNo">Roll Number:</label>
+    <input type="text" id="rollNo" placeholder="Enter roll number">
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" placeholder="Enter student name">
+    <label for="mathMarks">Math Marks:</label>
+    <input type="text" id="mathMarks" placeholder="Enter math marks">
+    <label for="scienceMarks">Science Marks:</label>
+    <input type="text" id="scienceMarks" placeholder="Enter science marks">
+    <label for="englishMarks">English Marks:</label>
+    <input type="text" id="englishMarks" placeholder="Enter English marks">
+    <button onclick="addStudentResult()">Add Result</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Student Name</th>
+        <th>Math Marks</th>
+        <th>Science Marks</th>
+        <th>English Marks</th>
+        <th>Total Marks</th>
+        <th>Average Marks</th>
+      </tr>
+    </thead>
+    <tbody id="resultTableBody">
+      <!-- Student result rows will be added dynamically here -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
